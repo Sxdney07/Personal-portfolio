@@ -1,0 +1,159 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydney Aluda | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">Sydney Aluda<span> | Portfolio</span></h2>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- HOME - SPLIT LAYOUT -->
+    <section id="home" class="hero-split">
+        <div class="hero-text">
+            <p class="hello">Hello, welcome to my page 👋</p>
+            <h1>I'm Sydney</h1>
+            <p class="intro">First-year Applied Computing student at KCA University, Nairobi.</p>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-image">
+            <img src="profile.jpg.jpeg" alt="Profile picture of Sydney Aluda" class="profile-pic">
+            <p class="caption">Nairobi, Kenya | KCA University</p>
+        </div>
+    </section>
+
+    <!-- ABOUT - 2 COLUMNS -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-grid">
+            <div class="about-story">
+                <p>My name is Sydney Aluda. I grew up in Nairobi. My curiosity with computers is what pushed me to join KCA University to study Applied Computing.</p>
+                <p>I am still at the beginning of my journey, but I enjoy the process. Right now I am focused on understanding the basics properly - how the web works, how to write clean code, and how to turn an idea into something people can actually use.</p>
+                <h3>What I Like Doing</h3>
+                <ol>
+                    <li>Building small websites and trying new designs</li>
+                    <li>Watching football and keeping fit</li>
+                    <li>Listening to music and watching movies</li>
+                    <li>Learning new things on YouTube</li>
+                </ol>
+            </div>
+            <div class="about-card">
+                <h3>My Education</h3>
+                <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>Institution</th>
+                        <th>Level</th>
+                    </tr>
+                    <tr>
+                        <td>2026</td>
+                        <td>KCA University</td>
+                        <td>Year 1</td></tr>
+                    <tr>
+                        <td>2022 - 2025</td>
+                        <td>Ngara Girls High School<td>
+                        </td>>KCSE</td></tr>
+                    <tr>
+                        <td>2014-2021</td>
+                        <td>Unity Primary School</td>
+                        <td>KCPE</td>
+                    </tr>
+                </table>
+                <p><strong>Currently Learning:</strong> Web Technologies, Python Basics</p>
+                <p><strong>Goal:</strong> Become a confident web developer by the end of Year 2.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS - GRID CARDS, NOT LIST -->
+    <section id="skills">
+        <h2>What I Can Do</h2>
+        <p>These are the 5 skills I am building in Year 1:</p>
+        <div class="skills-grid">
+            <div class="skill-card"><h3>HTML & CSS</h3><p>Designing and styling my own web pages from scratch.</p></div>
+            <div class="skill-card"><h3>Python (Beginner)</h3><p>Writing small programs to solve simple problems.</p></div>
+            <div class="skill-card"><h3>Microsoft Office</h3><p>Creating clean documents, slides and spreadsheets.</p></div>
+            <div class="skill-card"><h3>Troubleshooting</h3><p>Finding out why a computer misbehaves and fixing it.</p></div>
+            <div class="skill-card wide"><h3>Teamwork & Communication</h3><p>Working with classmates on group assignments and presentations.</p>
+                <ul class="hidden-list"><li>Teamwork</li></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS - HORIZONTAL CARDS -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <article class="project-wide">
+            <div class="project-number">01</div>
+            <div class="project-info">
+                <h3>Personal Portfolio Website</h3>
+                <p>A website about me, built for my Web Technologies CAT. I designed it myself using HTML and CSS with a black and gold theme. This is my first complete website.</p>
+                <p><strong>Tools:</strong> HTML, CSS, GitHub Pages</p>
+                <a href="https://github.com/" target="_blank">View on GitHub →</a>
+            </div>
+        </article>
+
+        <article class="project-wide">
+            <div class="project-number">02</div>
+            <div class="project-info">
+                <h3>Student Grade Calculator</h3>
+                <p>A beginner Python program I made to help students. You enter your marks, it calculates your average and tells you your grade. Simple, but it taught me how logic works.</p>
+                <p><strong>Tools:</strong> Python</p>
+                <a href="https://github.com/" target="_blank">View on GitHub →</a>
+            </div>
+        </article>
+
+        <article class="project-wide">
+            <div class="project-number">03</div>
+            <div class="project-info">
+                <h3>Simple Calculator Web App (Proposed)</h3>
+                <p>An idea I want to build next: a calculator that works inside the browser. I want to add JavaScript so the buttons actually work. This is my next learning goal.</p>
+                <p><strong>Tools:</strong> HTML, CSS, JavaScript (Proposed)</p>
+                <a href="#contact">Contact for Details →</a>
+            </div>
+        </article>
+    </section>
+
+    <!-- CONTACT - SPLIT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p>Have a question about my projects or want to work together on a class project? Send me a message.</p>
+                <p><strong>Email:</strong> <a href="mailto:aludasydney@gmail.com">aludasydney@gmail.com</a></p>
+                <p><strong>Location:</strong> Nairobi, Kenya</p>
+                <p><strong>School:</strong> KCA University</p>
+            </div>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Sydney Aluda. Built with HTML & CSS for CSN 1101.</p>
+    <p><a href="#home">Back to Top ↑</a></p>
+</footer>
+
+</body>
+</html>

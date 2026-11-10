@@ -1,0 +1,87 @@
+/* Sydney Aluda - Black + Gold - Unique Layout */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f1e6;
+    color: #1a1a1a;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #111;
+    padding: 16px 20px;
+    position: sticky; top: 0;
+    border-bottom: 3px solid #d4af37;
+}
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1050px; margin: auto; }
+.logo { color: white; }
+.logo span { color: #d4af37; font-size: 16px; }
+.nav-links { list-style: none; display: flex; gap: 22px; }
+.nav-links a { color: white; text-decoration: none; font-weight: bold; }
+.nav-links a:hover { color: #d4af37; text-decoration: underline; }
+
+section { max-width: 1050px; margin: 28px auto; background: white; padding: 30px; border-radius: 12px; border: 1px solid #e0d9c3; border-top: 4px solid #d4af37; }
+h1 { font-size: 42px; color: #111; line-height: 1.1; }
+h1 span { color: #b8962e; }
+h2 { color: #111; margin-bottom: 18px; border-bottom: 3px solid #d4af37; padding-bottom: 6px; }
+h3 { margin: 15px 0 8px 0; color: #111; }
+p { margin-bottom: 12px; }
+
+/* HERO SPLIT */
+.hero-split { display: flex; gap: 30px; align-items: center; background: #111; color: white; border: none; }
+.hero-split h1 { color: white; }
+.hello { color: #d4af37; font-weight: bold; letter-spacing: 1px; }
+.hero-text { flex: 1.3; }
+.hero-image { flex: 1; text-align: center; }
+.profile-pic { width: 200px; height: 200px; object-fit: cover; border-radius: 12px; border: 4px solid #d4af37; }
+.caption { font-size: 13px; color: #ccc; margin-top: 8px; }
+.btn { display: inline-block; background: #d4af37; color: #111; padding: 11px 22px; text-decoration: none; border-radius: 6px; font-weight: bold; margin: 8px 5px 0 0; border: 2px solid #d4af37; }
+.btn-outline { background: transparent; color: white; }
+.btn:hover { background: white; color: #111; border-color: white; }
+
+/* ABOUT GRID */
+.about-grid { display: flex; gap: 25px; }
+.about-story { flex: 1.5; }
+.about-story ol { margin-left: 20px; }
+.about-card { flex: 1; background: #fffdf5; border: 1px solid #e0d9c3; border-radius: 10px; padding: 20px; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+th, td { border: 1px solid #ccc; padding: 9px; text-align: left; font-size: 14px; }
+th { background: #111; color: #d4af37; }
+
+/* SKILLS GRID */
+.skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 15px; }
+.skill-card { border: 1px solid #e0d9c3; border-left: 5px solid #d4af37; padding: 18px; border-radius: 8px; background: #fffdf5; }
+.skill-card.wide { grid-column: span 2; }
+.hidden-list { display: none; }
+
+/* PROJECTS WIDE */
+.project-wide { display: flex; gap: 20px; border: 1px solid #e0d9c3; border-radius: 10px; padding: 20px; margin-bottom: 16px; background: #fffdf5; }
+.project-number { font-size: 36px; font-weight: 900; color: #d4af37; min-width: 60px; }
+.project-wide a { color: #111; font-weight: bold; }
+.project-wide a:hover { color: #b8962e; }
+
+/* CONTACT GRID */
+.contact-grid { display: flex; gap: 30px; }
+.contact-info { flex: 1; }
+.contact-info a { color: #111; font-weight: bold; }
+form { flex: 1.2; display: flex; flex-direction: column; gap: 10px; }
+input, textarea { padding: 12px; border: 1px solid #ccc; border-radius: 6px; width: 100%; }
+button { background: #111; color: #d4af37; padding: 12px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 16px; }
+button:hover { background: #d4af37; color: #111; }
+
+footer { background: #111; color: white; text-align: center; padding: 22px; border-top: 3px solid #d4af37; }
+footer a { color: #d4af37; }
+
+/* MOBILE - Stack everything */
+@media (max-width: 700px) {
+    nav { flex-direction: column; gap: 10px; }
+    .nav-links { flex-wrap: wrap; justify-content: center; }
+    .hero-split, .about-grid, .contact-grid { flex-direction: column; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .skill-card.wide { grid-column: span 1; }
+    .project-wide { flex-direction: column; }
+    section { margin: 15px; padding: 20px; }
+    h1 { font-size: 30px; }
+}
